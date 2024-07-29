@@ -1,5 +1,6 @@
 # gyandistro-backend-nestjs-functions
-Blogging app 
+
+Blogging app
 
 ## Description
 
