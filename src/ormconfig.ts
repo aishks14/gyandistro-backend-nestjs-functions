@@ -1,5 +1,6 @@
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
-
+import "reflect-metadata";
+import { TagEntity } from "./tag/tag.entity";
 const config: PostgresConnectionOptions = {
     type: 'postgres',
     host: 'localhost',
@@ -7,7 +8,8 @@ const config: PostgresConnectionOptions = {
     username: 'gyandistro',
     password: 'aishodc@WIP555',
     database: 'gyandistro',
-    entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    // entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    entities: [TagEntity],
     synchronize: true
 }
 
